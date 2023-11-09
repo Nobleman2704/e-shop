@@ -8,7 +8,6 @@ import com.example.eshop.mapper.ProductMapper;
 import com.example.eshop.repository.ProductRepository;
 import com.example.eshop.service.ProductService;
 import io.micrometer.core.instrument.util.StringUtils;
-import jodd.util.StringUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

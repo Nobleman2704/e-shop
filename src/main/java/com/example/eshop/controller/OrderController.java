@@ -1,11 +1,9 @@
 package com.example.eshop.controller;
 
 import com.example.eshop.dto.request.OrderRequest;
-import com.example.eshop.dto.request.ProductRequest;
 import com.example.eshop.dto.response.CheckResponse;
 import com.example.eshop.exception.GlobalEShopException;
 import com.example.eshop.service.OrderService;
-import com.example.eshop.service.impl.OrderServiceImpl;
 import com.example.eshop.util.exception.ExceptionUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -13,9 +11,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

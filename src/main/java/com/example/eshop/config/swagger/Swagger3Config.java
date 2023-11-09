@@ -11,8 +11,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Swagger3Config {
-
-    public static final String AUTHORIZATION_HEADER = "Authorization";
     private static final String SECURITY_SCHEME_NAME = "Bearer oAuth Token";
     @Bean
     public OpenAPI openApiConfiguration(

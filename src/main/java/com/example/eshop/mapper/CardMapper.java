@@ -5,7 +5,6 @@ import com.example.eshop.dto.request.PaymentCardRequest;
 import com.example.eshop.dto.response.PaymentCardResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface CardMapper extends BaseMapper<PaymentCard, PaymentCardRequest, PaymentCardResponse>{

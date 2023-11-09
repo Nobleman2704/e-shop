@@ -2,7 +2,6 @@ package com.example.eshop.controller;
 
 import com.example.eshop.dto.request.CheckRequest;
 import com.example.eshop.service.CheckService;
-import com.example.eshop.service.impl.CheckServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

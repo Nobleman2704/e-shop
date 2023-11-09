@@ -1,6 +1,5 @@
 package com.example.eshop.service.rate_limiter;
 
-import com.example.eshop.domain.entity.User;
 import com.example.eshop.service.UserService;
 import io.github.bucket4j.Bandwidth;
 import io.github.bucket4j.Bucket;

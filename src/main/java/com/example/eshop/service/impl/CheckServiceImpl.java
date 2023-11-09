@@ -4,19 +4,14 @@ import com.example.eshop.domain.entity.*;
 import com.example.eshop.enums.OrderState;
 import com.example.eshop.dto.request.CheckRequest;
 import com.example.eshop.dto.response.CheckResponse;
-import com.example.eshop.dto.response.OrderResponse;
 import com.example.eshop.exception.GlobalEShopException;
 import com.example.eshop.mapper.CheckMapper;
 import com.example.eshop.rabbit.producer.RabbitProducer;
 import com.example.eshop.repository.CardRepository;
 import com.example.eshop.repository.CheckRepository;
-import com.example.eshop.repository.OrderItemsRepository;
 import com.example.eshop.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.LinkedList;
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

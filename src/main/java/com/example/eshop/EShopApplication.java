@@ -1,5 +1,6 @@
 package com.example.eshop;
 
+import com.example.eshop.exception.GlobalEShopException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
@@ -16,6 +17,8 @@ public class EShopApplication {
             SpringApplication.run(EShopApplication.class, args);
             jedis.flushAll();
             System.out.println("Redis cache cleared successfully.");
+        }catch (Exception e) {
+            throw new GlobalEShopException(e.getMessage());
         }
     }
 }
