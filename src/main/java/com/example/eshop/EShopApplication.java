@@ -3,9 +3,6 @@ package com.example.eshop;
 import com.example.eshop.exception.GlobalEShopException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
 import redis.clients.jedis.Jedis;
 
 @SpringBootApplication(scanBasePackages = {
