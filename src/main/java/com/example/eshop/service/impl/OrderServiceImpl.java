@@ -122,6 +122,12 @@ public class OrderServiceImpl implements OrderService {
         if (order.getUserId()!=userId)
             throw new GlobalEShopException("User id is not equal with Order user id");
 
+        if (order.getOrderState().equals(OrderState.ORDERED)
+                ||order.getOrderState().equals(OrderState.CANCELLED))
+            throw new GlobalEShopException(String.format(
+                    "Order state is not in PENDING state! order state-->%s", order.getOrderState().name()));
+
+
         List<Product> productList = new LinkedList<>();
         List<OrderItem> orderItemList = orderItemsRepository.findByParentOrderId(orderId);
         for (OrderItem orderItem : orderItemList) {
