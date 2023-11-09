@@ -1,0 +1,29 @@
+openapi:
+  title: Inspector Admin API
+  version: v3
+  description: Inspector Admin API
+
+
+spring:
+  profiles:
+    active: Staging
+
+  jpa:
+    database: postgresql
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    password: Asadbek
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    queue: queue_shop
+    routingKey: routing_key_shop
+    exchange: exchange_shop
