@@ -1,4 +1,4 @@
-package com.example.eshop.annotation;
+package com.example.eshop.annotation.validation;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

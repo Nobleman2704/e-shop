@@ -1,6 +1,6 @@
 package com.example.eshop.dto.request;
 
-import com.example.eshop.annotation.ValidCardTypePattern;
+import com.example.eshop.annotation.validation.ValidCardTypePattern;
 import lombok.Data;
 
 import javax.validation.constraints.Min;

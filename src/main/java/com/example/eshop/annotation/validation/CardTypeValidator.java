@@ -1,4 +1,4 @@
-package com.example.eshop.annotation;
+package com.example.eshop.annotation.validation;
 
 import com.example.eshop.enums.CardType;
 

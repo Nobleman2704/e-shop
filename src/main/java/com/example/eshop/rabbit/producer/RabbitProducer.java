@@ -15,7 +15,6 @@ public class RabbitProducer {
     private final RabbitTemplate rabbitTemplate;
 
     public void sendOrderMessage(String message){
-
         rabbitTemplate.convertAndSend(exchangeName, routingJsonKey, message);
     }
 }
