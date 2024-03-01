@@ -24,7 +24,7 @@ public class RabbitMQConfig {
     //creating queue
     @Bean
     public Queue queue(){
-        return new Queue(queue, false);
+        return new Queue(queue);
     }
 
     //creating exchange

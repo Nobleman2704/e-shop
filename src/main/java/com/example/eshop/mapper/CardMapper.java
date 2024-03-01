@@ -9,6 +9,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface CardMapper extends BaseMapper<PaymentCard, PaymentCardRequest, PaymentCardResponse>{
     @Override
-    @Mapping(target = "cardType", source = "cardType", ignore = true)
+//    @Mapping(target = "cardType", source = "cardType", ignore = true)
     PaymentCard toEntity(PaymentCardRequest request);
 }
